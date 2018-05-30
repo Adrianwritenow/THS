@@ -12,6 +12,21 @@ import Communities from "./components/communitiesPg";
 
 
 class App extends Component {
+  componentWillMount(){
+    var x = document.getElementById("loader");
+    var y = document.getElementById("root");
+
+    y.style.opacity='0';
+    setTimeout(function(){x.style.display='none'},2000);
+
+  }
+  componentDidMount(){
+    var y = document.getElementById("root");
+    setTimeout(function(){y.style.opacity=1, y.style.transition='opacity 450ms ease-in'},2000);
+
+
+
+  }
 
 
   render() {

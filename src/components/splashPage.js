@@ -5,6 +5,9 @@ import '../css/App.css';
 
 
 class SplashPage extends Component {
+  componentWillMount(){
+    
+  }
 
   componentDidMount(){
     // loaderKill();
@@ -21,7 +24,7 @@ class SplashPage extends Component {
 
           <div className="site-wrapper-inner">
 
-            <div className="cover-container"> 
+            <div className="cover-container">
 
               <div className="inner cover">
                 <h1 className="cover-heading">Cover your page.</h1>

@@ -26,7 +26,7 @@ class BaseLayout extends Component {
                   <h3 className="masthead-brand">Cover</h3>
                   <nav>
                     <ul className="nav masthead-nav">
-                      <li className="active"><NavLink exact to="/">Home</NavLink></li>
+                      <li><NavLink exact path to="/">Home</NavLink></li>
                       <li><NavLink exact to="/About">About</NavLink></li>
                       <li><NavLink exact to="/Enlist">Enlist</NavLink></li>
                       <li><NavLink exact to="/Communities">Communities</NavLink></li>
