@@ -1,3 +1,14 @@
+.fade-enter{
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter .fade-enter-active{
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+
+
 a {
   color: #fff;
   &:focus, &:hover {
@@ -43,7 +54,7 @@ body {
 
 .site-wrapper {
   display: table;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   /* For at least Firefox */
   min-height: 100%;

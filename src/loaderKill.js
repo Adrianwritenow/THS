@@ -1,3 +1,6 @@
+// import compTrans from './compTrans.js';
+
+
 export default function loaderKill(){
 
   var loader = document.getElementById('loader');
@@ -22,6 +25,7 @@ export default function loaderKill(){
         i--;
         while (oldChildren.childNodes.length > 0) {
           root.appendChild(oldChildren.childNodes[0]);
+            // compTrans();
         }
         console.log(i);
         console.log('loader removed');

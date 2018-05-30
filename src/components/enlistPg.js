@@ -4,7 +4,8 @@ import '../css/App.css';
 
 
 
-class SplashPage extends Component {
+
+class EnlistPg extends Component {
 
   componentDidMount(){
     // loaderKill();
@@ -17,6 +18,7 @@ class SplashPage extends Component {
 
 
     return(
+
         <div className="site-wrapper">
 
           <div className="site-wrapper-inner">
@@ -39,7 +41,7 @@ class SplashPage extends Component {
               </div>
 
               <div className="inner cover">
-                <h1 className="cover-heading">Cover your page.</h1>
+                <h1 className="cover-heading">ENLIST</h1>
                 <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
                 <p className="lead">
                   <a href="#" className="btn btn-lg btn-default">Learn more</a>
@@ -50,9 +52,15 @@ class SplashPage extends Component {
                 <div className="inner">
                 </div>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
+
+
 
     );
 
@@ -62,5 +70,4 @@ class SplashPage extends Component {
 
 }
 
-
-export default SplashPage;
+export default EnlistPg;
