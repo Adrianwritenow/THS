@@ -8,7 +8,7 @@ class AboutPg extends Component {
 
   componentDidMount(){
     // loaderKill();
-    console.log("COMPONENT MOUNTED:Splash");
+    console.log("COMPONENT MOUNTED:About");
 
   }
 
@@ -23,20 +23,6 @@ class AboutPg extends Component {
 
             <div className="cover-container">
 
-              <div className="masthead clearfix">
-                <div className="inner">
-                  <h3 className="masthead-brand">Cover</h3>
-                  <nav>
-                    <ul className="nav masthead-nav">
-                      <li className="active"><a href="/">Home</a></li>
-                      <li><a href="/About">About</a></li>
-                      <li><a href="/Enlist">Enlist</a></li>
-                      <li><a href="/Communities">Communities</a></li>
-
-                    </ul>
-                  </nav>
-                </div>
-              </div>
 
               <div className="inner cover">
                 <h1 className="cover-heading">ABOUT</h1>

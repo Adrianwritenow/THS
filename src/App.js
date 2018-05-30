@@ -3,6 +3,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './css/App.css';
+import BaseLayout from './components/baseLayout';
 import SplashPage from "./components/splashPage";
 import About from "./components/aboutPg";
 import Enlist from "./components/enlistPg";
@@ -18,12 +19,14 @@ class App extends Component {
     <BrowserRouter>
       <Route render={({location})=> console.log(location)|| (
         <TransitionGroup>
-          <CSSTransition key={location.pathname} classNames='fade' timeout={300}>
-            <Switch location={location}>
-              <Route exact path="/" component={SplashPage}/>
-              <Route  path="/About" component={About}/>
-              <Route  path="/Enlist" component={Enlist}/>
-              <Route  path="/Communities" component={Communities}/>
+          <CSSTransition key={location.key} classNames='fade' timeout={300}>
+            <Switch location={location.key}>
+              <BaseLayout>
+                <Route exact path="/" component={SplashPage}/>
+                <Route  exact path="/About" component={About}/>
+                <Route  exact path="/Enlist" component={Enlist}/>
+                <Route  exact path="/Communities" component={Communities}/>
+              </BaseLayout>
             </Switch>
           </CSSTransition>
         </TransitionGroup>

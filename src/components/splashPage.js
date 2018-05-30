@@ -21,22 +21,7 @@ class SplashPage extends Component {
 
           <div className="site-wrapper-inner">
 
-            <div className="cover-container">
-
-              <div className="masthead clearfix">
-                <div className="inner">
-                  <h3 className="masthead-brand">Cover</h3>
-                  <nav>
-                    <ul className="nav masthead-nav">
-                      <li className="active"><a href="/">Home</a></li>
-                      <li><a href="/About">About</a></li>
-                      <li><a href="/Enlist">Enlist</a></li>
-                      <li><a href="/Communities">Communities</a></li>
-
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+            <div className="cover-container"> 
 
               <div className="inner cover">
                 <h1 className="cover-heading">Cover your page.</h1>
