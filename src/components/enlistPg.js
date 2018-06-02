@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 import '../css/App.css';
 
 
@@ -41,19 +42,48 @@ class EnlistPg extends Component {
         </section>
         <section className="two" id="about">
 
-            <div className="wrapper">
+            <div className="whyWrapper">
 
 
 
               <div className="content">
-              <h1 className="cover-heading">WHAT IS THS?</h1>
-              <img className='thsLogo' src='png/THS.png' alt='THS_LOGO'/>
-                <p>The Holy Sepluchre is a gaming community consisting of
-                  over 1,600 members  with communities in Rainbow 6 Siege,
-                  Darksouls, Monster Hunter and is the LARGEST For Honor
-                  Knights community.
+              <h1 className="cover-heading">WHY JOIN?</h1>
+
+                <p>The Holy Sepluchre is a constantly growing community, we are both
+                 welcoming and excited for new members. We want you to learn and grow
+                 with our members and we also hope to learn something from you as well.
                 </p>
               </div>
+
+              <div className="content">
+              <h1 className="cover-heading"> A LARGE COMMUNITY</h1>
+              <i className="fa fa-users"></i>
+
+                <p>We have over 1,600 members and span several games, constantly adding
+                  new ones. Join one of our many chatrooms spanning from game game discussion
+                  to memes.
+                </p>
+              </div>
+
+              <div className="content">
+              <h1 className="cover-heading"> EVENTS AND COMPETITION</h1>
+              <i className="fa fa-trophy"></i>
+
+
+                <p>We regularly hold community events going beyond just solo and team battles.
+                  With a community as large as ours expect a variety of competition.
+                </p>
+              </div>
+
+              <div className="content">
+              <h1 className="cover-heading">MAKE FRIENDS, PARTY UP</h1>
+              <i className="fa fa-handshake-o" ></i>
+                <p> If you have problems finding regular groups, we got you covered!
+                  based on your timezone you will be given a leigon. That leigon
+                  will have more than plenty of people to meet and link up!
+                </p>
+              </div>
+
 
             </div>
 
@@ -61,14 +91,16 @@ class EnlistPg extends Component {
           </section>
           <section className="three" id="about">
 
-              <div className="wrapper">
+              <div className="discWrapper">
 
 
 
                 <div className="content">
-                <h1 className="cover-heading">COMMUNITY LEADERS</h1>
+                <h1 className="cover-heading">WHAT ARE YOU WAITING FOR?</h1>
 
-                  <p>We have A very large community, here are the THS Moderators </p>
+
+                <a href='#'><i className="fab fa-discord"></i></a>
+
                 </div>
 
               </div>

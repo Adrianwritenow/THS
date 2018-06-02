@@ -148,10 +148,36 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 90vh; }
+  min-height: 90vh; }
+
+.fa {
+  font-size: 4em !important;
+  border: 1px solid darkgoldenrod;
+  border-radius: 100%;
+  padding: 20px;
+  color: palegoldenrod; }
+
+.fab {
+  font-size: 6em;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 25px;
+  background: -webkit-radial-gradient(circle farthest-corner, #a0abca, #617ed1);
+  box-shadow: 7px 5px 9px black; }
+
+.discWrapper {
+  top: 30% !important; }
+
+.fa-handshake-o {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 3.6em !important; }
 
 .content {
   height: 100%; }
+
+p {
+  padding: 5%; }
 
 .contentOne {
   display: flex;
@@ -161,7 +187,7 @@ section {
 .contentWrapper {
   padding-top: 12%; }
 
-.wrapper {
+.wrapper, .discWrapper, .whyWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +204,10 @@ section {
   font-style: normal;
   font-weight: 100;
   color: darkgoldenrod; }
+
+.whyWrapper {
+  flex-wrap: wrap;
+  position: static; }
 
 .nav, .mastfoot {
   z-index: 1;
