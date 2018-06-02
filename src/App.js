@@ -22,7 +22,7 @@ class App extends Component {
   }
   componentDidMount(){
     var y = document.getElementById("root");
-    setTimeout(function(){y.style.opacity=1, y.style.transition='opacity 450ms ease-in'},2000);
+    setTimeout(function(){y.style.opacity=1, y.style.transition='opacity 250ms ease-in'},2000);
 
 
 

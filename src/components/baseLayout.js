@@ -21,19 +21,17 @@ class BaseLayout extends Component {
 
     return(
 
-              <div className="masthead clearfix">
-                <div className="inner">
-                  <h3 className="masthead-brand">Cover</h3>
+              <div className="masthead">
                   <nav>
-                    <ul className="nav masthead-nav">
-                      <li><NavLink exact path to="/">Home</NavLink></li>
-                      <li><NavLink exact to="/About">About</NavLink></li>
-                      <li><NavLink exact to="/Enlist">Enlist</NavLink></li>
-                      <li><NavLink exact to="/Communities">Communities</NavLink></li>
+                    <ul className="nav">
+                      <li><NavLink exact path to="/">HOME</NavLink></li>
+                      <li><NavLink exact to="/About">ABOUT</NavLink></li>
+                      <li><NavLink exact to="/Enlist">ENLIST</NavLink></li>
+                      <li><NavLink exact to="/Communities">COMMUNITIES</NavLink></li>
                     </ul>
                   </nav>
-                </div>
                 {this.props.children}
+                <div className='mastfoot'>ADRIANWRITENOW.COM</div>
               </div>
 
 
