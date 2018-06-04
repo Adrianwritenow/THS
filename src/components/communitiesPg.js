@@ -2,122 +2,119 @@ import React, { Component } from 'react';
 import '../css/App.css';
 
 
+function lowerZIndex(event){
+  event.preventDefault();
+  let gameInfo = event.currentTarget.firstChild;
+  let gameVid =gameInfo.nextElementSibling;
+  gameVid.currentTime=0;
+  gameVid.play();
+  gameVid.style.zIndex='0';
+  console.log('im entering');
+}
+function raiseZIndex(event){
+  event.preventDefault();
+
+  let gameInfo = event.currentTarget.firstChild;
+  let gameVid =gameInfo.nextElementSibling;
+  gameVid.currentTime=0;
+  gameVid.style.zIndex='1';
+  gameVid.pause();
+
+  console.log('im leavin');
+}
 
 
 
 class CommunitiesPg extends Component {
+  constructor(props) {
+  super(props);
+
+}
+
+
 
   componentDidMount(){
     // loaderKill();
     // compTrans();
-    console.log("COMPONENT MOUNTED:Communities");
+
+console.log("COMPONENT MOUNTED:Communities");
 
   }
+
+
 
   render() {
 
 
     return(
           <div className="contentWrapper">
-
-
-          <section className="one" id="about">
-
-
+            <section className="one" id="about">
               <div className="wrapper">
-                <div className='bannerTxt'>
-                  <h1>ENLIST</h1>
-                  <h4>JOIN OUR RANKS</h4>
+                <div className='communitiesTxt'>
+                  <h1>COMMUNITIES</h1>
+                  <h4>GAMES WE PLAY</h4>
                 </div>
-
                 <div className="content contentOne">
-
                 </div>
-
               </div>
-
-
             </section>
             <section className="two" id="about">
+              <div className="whyWrapper">
+                <div className="communitiesContent">
 
-                <div className="whyWrapper">
+                  <div className='communityInfoWrap'onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                    <div className='communityInfo'>
+                      <p><span>THS IS THE LARGEST DEDICATED KNIGHT FACTION IN FOR HONOR!</span><br />
+                        Enter the chaos of war as a bold knight and master the Art
+                        of Battle in brutal, fast-paced melee combat.
 
-
-
-                  <div className="content">
-                  <h1 className="cover-heading">WHY JOIN?</h1>
-
-                    <p>The Holy Sepluchre is a constantly growing community, we are both
-                     welcoming and excited for new members. We want you to learn and grow
-                     with our members and we also hope to learn something from you as well.
-                    </p>
-                  </div>
-
-                  <div className="content">
-                  <h1 className="cover-heading"> A LARGE COMMUNITY</h1>
-                  <i className="fa fa-users"></i>
-
-                    <p>We have over 1,600 members and span several games, constantly adding
-                      new ones. Join one of our many chatrooms spanning from game game discussion
-                      to memes.
-                    </p>
-                  </div>
-
-                  <div className="content">
-                  <h1 className="cover-heading"> EVENTS AND COMPETITION</h1>
-                  <i className="fa fa-trophy"></i>
-
-
-                    <p>We regularly hold community events going beyond just solo and team battles.
-                      With a community as large as ours expect a variety of competition.
-                    </p>
-                  </div>
-
-                  <div className="content">
-                  <h1 className="cover-heading">MAKE FRIENDS, PARTY UP</h1>
-                  <i className="fa fa-handshake-o" ></i>
-                    <p> If you have problems finding regular groups, we got you covered!
-                      based on your timezone you will be given a leigon. That leigon
-                      will have more than plenty of people to meet and link up!
-                    </p>
-                  </div>
-
-
-                </div>
-
-
-              </section>
-              <section className="three" id="about">
-
-                  <div className="discWrapper">
-
-
-
-                    <div className="content">
-                    <h1 className="cover-heading">WHAT ARE YOU WAITING FOR?</h1>
-
-
-                    <a href='#'><i className="fab fa-discord"></i></a>
-
+                      </p>
                     </div>
-
+                    <video  muted loop='true' id="r6Video">
+                      <source src="public/../comVidFH.mp4" type="video/mp4"/>
+                      Your browser does not support HTML5 video.
+                    </video>
                   </div>
 
+                  <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                    <div className='communityInfo'>
+                      <p>Choose from a variety of unique Counter-Terrorist Operators and master their abilities
+                       as you lead your team through tense, thrilling, and destructive team-based combat.</p>
+                    </div>
+                    <video  muted loop='true' id="r6Video">
+                      <source src="public/../comVidR6.mp4" type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                    </video>
+                  </div>
 
-                </section>
+                  <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                    <div className='communityInfo'>
+                      <p>Take on the role of a hunter venturing into a new continent where you track down and
+                       slay ferocious beasts in heart-pounding battles.</p>
+                    </div>
+                    <video  muted loop='true' id="r6Video">
+                      <source src="public/../comVidMH.mp4" type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                    </video>
+                  </div>
 
-
-            </div>
-
-
-
-
+                  <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                    <div className='communityInfo'>
+                      <p>Set in the Kingdom of Lothric, a bell has rung to signal that the First Flame,
+                      responsible for maintaining the Age of Fire, is dying out. As has happened many times
+                      before, the coming of the Age of Dark produces the undead.</p>
+                    </div>
+                    <video  muted loop='true' id="r6Video">
+                      <source src="public/../comVidDS.mp4" type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                      </video>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
     );
-
-
-
   }
-
 }
 
 export default CommunitiesPg;

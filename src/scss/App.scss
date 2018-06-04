@@ -1,4 +1,4 @@
-
+$ths-orange:#F86534;
 
 .fade-enter{
   opacity: 0;
@@ -17,6 +17,9 @@
 
 }
 
+span{
+  color: $ths-orange;
+}
 
 
 a {
@@ -58,7 +61,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  height: 95vh;
+  height: auto;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -66,9 +69,8 @@ body {
 .site-wrapper {
   display: table;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   /* For at least Firefox */
-  min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
   z-index: 0;
@@ -146,6 +148,11 @@ body {
   }
 }
 
+.cover-heading{
+      font-weight: lighter;
+      color: palegoldenrod;
+}
+
 .thsLogo{
   width: 55%;
   border-radius: 100%;
@@ -185,6 +192,10 @@ body {
   box-shadow: 0px 0px 50px 10px aqua;
 
 }
+video{
+  width: 100%;
+  // height: 100%;
+}
 
 #myVideo {
     position: absolute;
@@ -195,18 +206,43 @@ body {
     object-fit: cover;
     overflow: hidden;
     z-index: -1;
+}
+#r6Video{
+  z-index: 2;
 
 }
+.communityInfoWrap{
+  width: 97vw;
+height: fit-content;
+display: flex;
+align-items: center;
+margin-bottom: 5%;
+
+}
+.communityInfo{
+  position: absolute;
+background-color: black;
+z-index: 1;
+width: inherit;
+color: palegoldenrod;
+opacity: .7;
+}
+
+
 section{
   background-repeat: no-repeat;
   background-size: cover;
-
   // Reset stacking context
   // isolation: isolate;
   // Must be set to correctly position .wrapper below
   position: relative;
   // Height not required. Can be left as auto
   min-height: 90vh ;
+
+}
+
+.bg{
+ background-color: #282828;
 
 }
 
@@ -239,6 +275,10 @@ section{
 .content{
 
 height: 100%;
+z-index: 1;
+}
+.communitiesContent{
+  @extend .content;
 
 }
 
@@ -286,10 +326,17 @@ opacity: .2;
   position: static;
 }
 
+.communitiesTxt>h1{
+  font-size: 3.5em;
+  font-style: normal;
+  font-weight: 100;
+  color: darkgoldenrod;
+}
 
 .nav{
-  z-index: 1;
+  z-index: 2;
   padding: 10px;
+  border-bottom: 1px solid palegoldenrod;
   position: fixed;
     background-color: black;
     width: 100%;

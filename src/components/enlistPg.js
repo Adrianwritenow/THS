@@ -23,7 +23,7 @@ class EnlistPg extends Component {
       <div className="contentWrapper">
 
 
-      <section className="one" id="about">
+      <section className="one bg" id="about">
 
 
           <div className="wrapper">
@@ -40,7 +40,7 @@ class EnlistPg extends Component {
 
 
         </section>
-        <section className="two" id="about">
+        <section className="two bg" id="about">
 
             <div className="whyWrapper">
 
@@ -49,7 +49,7 @@ class EnlistPg extends Component {
               <div className="content">
               <h1 className="cover-heading">WHY JOIN?</h1>
 
-                <p>The Holy Sepluchre is a constantly growing community, we are both
+                <p><span>The Holy Sepluchre</span> is a constantly growing community, we are both
                  welcoming and excited for new members. We want you to learn and grow
                  with our members and we also hope to learn something from you as well.
                 </p>
@@ -89,7 +89,7 @@ class EnlistPg extends Component {
 
 
           </section>
-          <section className="three" id="about">
+          <section className="three bg" id="about">
 
               <div className="discWrapper">
 
