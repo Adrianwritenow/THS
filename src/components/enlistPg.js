@@ -9,8 +9,8 @@ import '../css/App.css';
 class EnlistPg extends Component {
 
   componentDidMount(){
-    // loaderKill();
-    // compTrans();
+    let top = document.getElementById('one');
+    top.scrollIntoView();
     console.log("COMPONENT MOUNTED:Enlist");
 
   }
@@ -20,10 +20,10 @@ class EnlistPg extends Component {
 
     return(
 
-      <div className="contentWrapper">
+      <div className="contentWrapper" id='one'>
 
 
-      <section className="one bg" id="about">
+      <section className="one bg">
 
 
           <div className="wrapper">

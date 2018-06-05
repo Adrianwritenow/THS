@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
+
+
 import '../css/App.css';
 
 
@@ -10,8 +15,8 @@ class SplashPage extends Component {
   }
 
   componentDidMount(){
-    // loaderKill();
-    // compTrans();
+    // let top = document.getElementById('one');
+    // top.scrollIntoView();
     console.log("COMPONENT MOUNTED:Splash");
 
   }
@@ -20,10 +25,10 @@ class SplashPage extends Component {
 
 
     return(
-      <div className="contentWrapper">
+      <div className="contentWrapper" id='one'>
 
 
-      <section className="one" id="about">
+      <section className="one">
 
 
           <div className="wrapper">
@@ -51,7 +56,9 @@ class SplashPage extends Component {
 
               <div className="content">
               <h1 className="cover-heading">WHAT IS <span>THS</span>?</h1>
-              <img className='thsLogo' src='png/THS.png' alt='THS_LOGO'/>
+              <ScrollAnimation animateIn='flipInY'>
+                <img className='thsLogo' src='png/THS.png' alt='THS_LOGO'/>
+              </ScrollAnimation>
                 <p><span>The Holy Sepluchre</span> is a gaming community consisting of
                   over 1,600 members  with communities in Rainbow 6 Siege,
                   Darksouls, Monster Hunter and is <span>the LARGEST For Honor

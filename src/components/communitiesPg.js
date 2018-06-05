@@ -34,8 +34,8 @@ class CommunitiesPg extends Component {
 
 
   componentDidMount(){
-    // loaderKill();
-    // compTrans();
+  let top = document.getElementById('one');
+  top.scrollIntoView();
 
 console.log("COMPONENT MOUNTED:Communities");
 
@@ -47,8 +47,8 @@ console.log("COMPONENT MOUNTED:Communities");
 
 
     return(
-          <div className="contentWrapper">
-            <section className="one" id="about">
+          <div className="contentWrapper" id='one'>
+            <section className="one bg" id="about">
               <div className="wrapper">
                 <div className='communitiesTxt'>
                   <h1>COMMUNITIES</h1>
@@ -58,7 +58,7 @@ console.log("COMPONENT MOUNTED:Communities");
                 </div>
               </div>
             </section>
-            <section className="two" id="about">
+            <section className="two bg" id="about">
               <div className="whyWrapper">
                 <div className="communitiesContent">
 

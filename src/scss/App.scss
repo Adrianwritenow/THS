@@ -209,8 +209,11 @@ video{
 }
 #r6Video{
   z-index: 2;
+  border-top: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
 
 }
+
 .communityInfoWrap{
   width: 97vw;
 height: fit-content;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
+import { HashLink} from 'react-router-hash-link';
+
 
 import '../css/App.css';
 
@@ -24,10 +26,10 @@ class BaseLayout extends Component {
               <div className="masthead">
                   <nav>
                     <ul className="nav">
-                      <li><NavLink exact path to="/">HOME</NavLink></li>
-                      <li><NavLink exact to="/About">ABOUT</NavLink></li>
-                      <li><NavLink exact to="/Enlist">ENLIST</NavLink></li>
-                      <li><NavLink exact to="/Communities">COMMUNITIES</NavLink></li>
+                      <li><NavLink exact path to="/#one">HOME</NavLink></li>
+                      <li><HashLink exact  to="/#about">ABOUT</HashLink></li>
+                      <li><NavLink exact  to="/Enlist">ENLIST</NavLink></li>
+                      <li><NavLink exact  to="/Communities">COMMUNITIES</NavLink></li>
                     </ul>
                   </nav>
                 {this.props.children}
