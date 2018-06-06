@@ -118,14 +118,14 @@ body {
       }
     }
   }
-  .active > a {
-    color: #fff;
-    border-bottom-color: #fff;
-    &:hover, &:focus {
-      color: #fff;
-      border-bottom-color: #fff;
-    }
-  }
+  // .active > a {
+  //   color: #fff;
+  //   border-bottom-color: #fff;
+  //   &:hover, &:focus {
+  //     color: #fff;
+  //     border-bottom-color: #fff;
+  //   }
+  // }
 }
 
 @media (min-width: 768px) {
@@ -151,6 +151,7 @@ body {
 .cover-heading{
       font-weight: lighter;
       color: palegoldenrod;
+      margin-top: 5vh;
 }
 
 .thsLogo{
@@ -241,19 +242,23 @@ section{
   position: relative;
   // Height not required. Can be left as auto
   min-height: 90vh ;
+  padding-top: 10px;
 
 }
 
 .bg{
  background-color: #282828;
 
-}
 
+}
+.two>.wrapper{
+      top: 1vh;
+}
 .fa{
   font-size: 4em !important;
   border: 1px solid darkgoldenrod;
   border-radius: 100%;
-  padding: 20px;
+  padding: 60px;
     color: palegoldenrod;
 }
 
@@ -271,10 +276,15 @@ section{
   top: 30% !important;
 }
 .fa-handshake-o{
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+    padding-right: 52px;
+
   font-size: 3.6em !important;
 }
+
+
 .content{
 
 height: 100%;
@@ -283,6 +293,46 @@ z-index: 1;
 .communitiesContent{
   @extend .content;
 
+}
+
+.modImg{
+  z-index: 2;
+
+  width: 40vw;
+  height: 40vw;
+  border: 2px solid black;
+}
+.modText{
+  width: 40vw;
+  height: auto;
+  font-size: 8px;
+}
+.modContent{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+height: 100%;
+z-index: 1;
+align-items: center;
+}
+
+.modInfoWrap{
+  @extend .communityInfoWrap;
+  width: 42vw !important;
+}
+
+.modWrapper{
+  @extend .wrapper;
+  position: static !important;
+}
+
+.modInfo{
+  @extend .communityInfo;
+  background-color: #282828 !important;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p{
@@ -294,9 +344,7 @@ p{
   align-items: center;
 opacity: .2;
 }
-.contentWrapper{
-  padding-top: 12%;
-}
+
 
 .wrapper {
   display: flex;
@@ -313,14 +361,21 @@ opacity: .2;
   right: 0;
   bottom: 0;
   left: 0;
+      padding-top: 8vh;
 
 }
 
-.bannerTxt>h1{
-  font-size: 110px;
+.headerTop{
+  font-size: 3.5em;
   font-style: normal;
   font-weight: 100;
   color: darkgoldenrod;
+}
+
+.banner{
+  @extend .headerTop;
+  font-size: 7.6em;
+
 }
 
 .whyWrapper{
@@ -329,12 +384,16 @@ opacity: .2;
   position: static;
 }
 
-.communitiesTxt>h1{
-  font-size: 3.5em;
-  font-style: normal;
-  font-weight: 100;
-  color: darkgoldenrod;
-}
+// .communitiesTxt>h1{
+//   font-size: 3.5em;
+//   font-style: normal;
+//   font-weight: 100;
+//   color: darkgoldenrod;
+// }
+//
+//  .bannerTxt>h1{
+//
+//  }
 
 .nav{
   z-index: 2;

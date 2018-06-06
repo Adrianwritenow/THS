@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/App.css';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 
 function lowerZIndex(event){
@@ -51,8 +53,12 @@ console.log("COMPONENT MOUNTED:Communities");
             <section className="one bg" id="about">
               <div className="wrapper">
                 <div className='communitiesTxt'>
-                  <h1>COMMUNITIES</h1>
-                  <h4>GAMES WE PLAY</h4>
+                  <ScrollAnimation animateIn='zoomInDown'>
+                    <h1 className='headerTop'>COMMUNITIES</h1>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn='zoomInUp'>
+                    <h4>GAMES WE PLAY</h4>
+                  </ScrollAnimation>
                 </div>
                 <div className="content contentOne">
                 </div>
@@ -62,12 +68,12 @@ console.log("COMPONENT MOUNTED:Communities");
               <div className="whyWrapper">
                 <div className="communitiesContent">
 
+                <ScrollAnimation animateIn='bounceInDown'>
                   <div className='communityInfoWrap'onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                     <div className='communityInfo'>
                       <p><span>THS IS THE LARGEST DEDICATED KNIGHT FACTION IN FOR HONOR!</span><br />
                         Enter the chaos of war as a bold knight and master the Art
                         of Battle in brutal, fast-paced melee combat.
-
                       </p>
                     </div>
                     <video  muted loop='true' id="r6Video">
@@ -75,7 +81,9 @@ console.log("COMPONENT MOUNTED:Communities");
                       Your browser does not support HTML5 video.
                     </video>
                   </div>
+                </ScrollAnimation>
 
+                <ScrollAnimation animateIn='bounceInDown' >
                   <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                     <div className='communityInfo'>
                       <p>Choose from a variety of unique Counter-Terrorist Operators and master their abilities
@@ -86,18 +94,22 @@ console.log("COMPONENT MOUNTED:Communities");
                         Your browser does not support HTML5 video.
                     </video>
                   </div>
+                </ScrollAnimation>
 
-                  <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
-                    <div className='communityInfo'>
-                      <p>Take on the role of a hunter venturing into a new continent where you track down and
-                       slay ferocious beasts in heart-pounding battles.</p>
+                <ScrollAnimation animateIn='bounceInDown' >
+                    <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                      <div className='communityInfo'>
+                        <p>Take on the role of a hunter venturing into a new continent where you track down and
+                         slay ferocious beasts in heart-pounding battles.</p>
+                      </div>
+                      <video  muted loop='true' id="r6Video">
+                        <source src="public/../comVidMH.mp4" type="video/mp4"/>
+                          Your browser does not support HTML5 video.
+                      </video>
                     </div>
-                    <video  muted loop='true' id="r6Video">
-                      <source src="public/../comVidMH.mp4" type="video/mp4"/>
-                        Your browser does not support HTML5 video.
-                    </video>
-                  </div>
+                  </ScrollAnimation>
 
+                <ScrollAnimation animateIn='bounceInDown'>
                   <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                     <div className='communityInfo'>
                       <p>Set in the Kingdom of Lothric, a bell has rung to signal that the First Flame,
@@ -109,6 +121,7 @@ console.log("COMPONENT MOUNTED:Communities");
                         Your browser does not support HTML5 video.
                       </video>
                   </div>
+                </ScrollAnimation>
                 </div>
               </div>
             </section>

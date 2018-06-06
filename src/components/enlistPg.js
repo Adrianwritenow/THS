@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import '../css/App.css';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 
 
@@ -28,8 +30,13 @@ class EnlistPg extends Component {
 
           <div className="wrapper">
             <div className='bannerTxt'>
-              <h1>ENLIST</h1>
+            <ScrollAnimation animateIn='zoomInDown'>
+              <h1 className='banner'>ENLIST</h1>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='zoomInUp'>
               <h4>JOIN OUR RANKS</h4>
+            </ScrollAnimation>
+
             </div>
 
             <div className="content contentOne">
@@ -47,7 +54,10 @@ class EnlistPg extends Component {
 
 
               <div className="content">
-              <h1 className="cover-heading">WHY JOIN?</h1>
+              <ScrollAnimation animateIn='fadeInUp'>
+                <h1 className="cover-heading">WHY JOIN?</h1>
+              </ScrollAnimation>
+
 
                 <p><span>The Holy Sepluchre</span> is a constantly growing community, we are both
                  welcoming and excited for new members. We want you to learn and grow
@@ -57,7 +67,9 @@ class EnlistPg extends Component {
 
               <div className="content">
               <h1 className="cover-heading"> A LARGE COMMUNITY</h1>
-              <i className="fa fa-users"></i>
+              <ScrollAnimation animateIn='flipInY'>
+                <i className="fa fa-users"></i>
+              </ScrollAnimation>
 
                 <p>We have over 1,600 members and span several games, constantly adding
                   new ones. Join one of our many chatrooms spanning from game game discussion
@@ -67,8 +79,9 @@ class EnlistPg extends Component {
 
               <div className="content">
               <h1 className="cover-heading"> EVENTS AND COMPETITION</h1>
-              <i className="fa fa-trophy"></i>
-
+              <ScrollAnimation animateIn='flipInY'>
+                <i className="fa fa-trophy"></i>
+              </ScrollAnimation>
 
                 <p>We regularly hold community events going beyond just solo and team battles.
                   With a community as large as ours expect a variety of competition.
@@ -77,7 +90,9 @@ class EnlistPg extends Component {
 
               <div className="content">
               <h1 className="cover-heading">MAKE FRIENDS, PARTY UP</h1>
-              <i className="fa fa-handshake-o" ></i>
+              <ScrollAnimation animateIn='flipInY'>
+                <i className="fa fa-handshake-o" ></i>
+              </ScrollAnimation>
                 <p> If you have problems finding regular groups, we got you covered!
                   based on your timezone you will be given a leigon. That leigon
                   will have more than plenty of people to meet and link up!
@@ -100,6 +115,7 @@ class EnlistPg extends Component {
 
 
                 <a href='#'><i className="fab fa-discord"></i></a>
+              
 
                 </div>
 

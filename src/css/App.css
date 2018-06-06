@@ -86,12 +86,6 @@ body {
       border-bottom-color: #a9a9a9;
       border-bottom-color: rgba(255, 255, 255, 0.25);
       font-family: 'Julius Sans One', sans-serif; }
-.masthead-nav > .active > a {
-  color: #fff;
-  border-bottom-color: #fff; }
-  .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff; }
 
 @media (min-width: 768px) {
   .masthead-brand {
@@ -109,7 +103,8 @@ body {
 
 .cover-heading {
   font-weight: lighter;
-  color: palegoldenrod; }
+  color: palegoldenrod;
+  margin-top: 5vh; }
 
 .thsLogo {
   width: 55%;
@@ -158,14 +153,14 @@ video {
   border-top: 1px solid goldenrod;
   border-bottom: 1px solid goldenrod; }
 
-.communityInfoWrap {
+.communityInfoWrap, .modInfoWrap {
   width: 97vw;
   height: fit-content;
   display: flex;
   align-items: center;
   margin-bottom: 5%; }
 
-.communityInfo {
+.communityInfo, .modInfo {
   position: absolute;
   background-color: black;
   z-index: 1;
@@ -177,16 +172,20 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 90vh; }
+  min-height: 90vh;
+  padding-top: 10px; }
 
 .bg {
   background-color: #282828; }
+
+.two > .wrapper, .two > .discWrapper, .two > .modWrapper, .two > .whyWrapper {
+  top: 1vh; }
 
 .fa {
   font-size: 4em !important;
   border: 1px solid darkgoldenrod;
   border-radius: 100%;
-  padding: 20px;
+  padding: 60px;
   color: palegoldenrod; }
 
 .fab {
@@ -201,13 +200,47 @@ section {
   top: 30% !important; }
 
 .fa-handshake-o {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 52px;
+  padding-right: 52px;
   font-size: 3.6em !important; }
 
 .content, .communitiesContent {
   height: 100%;
   z-index: 1; }
+
+.modImg {
+  z-index: 2;
+  width: 40vw;
+  height: 40vw;
+  border: 2px solid black; }
+
+.modText {
+  width: 40vw;
+  height: auto;
+  font-size: 8px; }
+
+.modContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  z-index: 1;
+  align-items: center; }
+
+.modInfoWrap {
+  width: 42vw !important; }
+
+.modWrapper {
+  position: static !important; }
+
+.modInfo {
+  background-color: #282828 !important;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 p {
   padding: 5%; }
@@ -217,10 +250,7 @@ p {
   align-items: center;
   opacity: .2; }
 
-.contentWrapper {
-  padding-top: 12%; }
-
-.wrapper, .discWrapper, .whyWrapper {
+.wrapper, .discWrapper, .modWrapper, .whyWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,23 +260,21 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  padding-top: 8vh; }
 
-.bannerTxt > h1 {
-  font-size: 110px;
-  font-style: normal;
-  font-weight: 100;
-  color: darkgoldenrod; }
-
-.whyWrapper {
-  flex-wrap: wrap;
-  position: static; }
-
-.communitiesTxt > h1 {
+.headerTop, .banner {
   font-size: 3.5em;
   font-style: normal;
   font-weight: 100;
   color: darkgoldenrod; }
+
+.banner {
+  font-size: 7.6em; }
+
+.whyWrapper {
+  flex-wrap: wrap;
+  position: static; }
 
 .nav, .mastfoot {
   z-index: 2;

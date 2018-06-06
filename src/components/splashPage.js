@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-
-
-
 import '../css/App.css';
 
+function lowerZIndex(event){
+  event.preventDefault();
+  let gameInfo = event.currentTarget.firstChild;
+  let gameVid =gameInfo.nextElementSibling;
+  gameVid.style.zIndex='0';
+  console.log('im entering');
+}
+function raiseZIndex(event){
+  event.preventDefault();
+
+  let gameInfo = event.currentTarget.firstChild;
+  let gameVid =gameInfo.nextElementSibling;
+  gameVid.style.zIndex='1';
+
+  console.log('im leavin');
+}
 
 
 
@@ -15,8 +28,8 @@ class SplashPage extends Component {
   }
 
   componentDidMount(){
-    // let top = document.getElementById('one');
-    // top.scrollIntoView();
+    let top = document.getElementById('one');
+    top.scrollIntoView();
     console.log("COMPONENT MOUNTED:Splash");
 
   }
@@ -33,8 +46,13 @@ class SplashPage extends Component {
 
           <div className="wrapper">
             <div className='bannerTxt'>
-              <h1>THS</h1>
-              <h4>GAMING COMMUNITY</h4>
+              <ScrollAnimation animateIn='bounceInDown'>
+                <h1 className='banner'>THS</h1>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='bounceInUp'>
+                <h4>GAMING COMMUNITY</h4>
+              </ScrollAnimation>
+
             </div>
 
             <div className="content contentOne">
@@ -55,7 +73,9 @@ class SplashPage extends Component {
 
 
               <div className="content">
-              <h1 className="cover-heading">WHAT IS <span>THS</span>?</h1>
+              <ScrollAnimation animateIn='fadeInUp'>
+                <h1 className="cover-heading">WHAT IS <span>THS</span>?</h1>
+              </ScrollAnimation>
               <ScrollAnimation animateIn='flipInY'>
                 <img className='thsLogo' src='png/THS.png' alt='THS_LOGO'/>
               </ScrollAnimation>
@@ -70,16 +90,79 @@ class SplashPage extends Component {
 
 
           </section>
-          <section className="three bg" id="about">
+          <section className="three bg">
+            <ScrollAnimation animateIn='fadeInDown'>
+              <h1 className="cover-heading">COMMUNITY LEADERS</h1>
+            </ScrollAnimation>
 
-              <div className="wrapper">
+            <ScrollAnimation animateIn='fadeInUp'>
+              <p>We have A very large community, here are the <span>THS</span> Moderators </p>
+            </ScrollAnimation>
+              <div className="modWrapper">
 
 
 
-                <div className="content">
-                <h1 className="cover-heading">COMMUNITY LEADERS</h1>
+                <div className="modContent">
 
-                  <p>We have A very large community, here are the <span>THS</span> Moderators </p>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
+                      the community and trying to be a model leader. "
+                    </p>
+                  </div>
+                  <img src='png/bamf.png' className='modImg'/>
+                </div>
+                <p>GRANDMASTER BAMF</p>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
+                      the community and trying to be a model leader. "
+                    </p>
+                  </div>
+                  <img src='png/axios.png' className='modImg'/>
+                </div>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
+                      the community and trying to be a model leader. "
+                    </p>
+                  </div>
+                  <img src='png/luukiejj.png' className='modImg'/>
+                </div>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
+                      the community and trying to be a model leader. "
+                    </p>
+                  </div>
+                  <img src='png/virr.png' className='modImg'/>
+                </div>
+
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
+                      the community and trying to be a model leader. "
+                    </p>
+                  </div>
+                  <img src='png/westo.png' className='modImg'/>
+                </div>
+
+                </ScrollAnimation>
+
                 </div>
 
               </div>
