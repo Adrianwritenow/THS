@@ -15,25 +15,7 @@
 span {
   color: #F86534; }
 
-a {
-  color: #fff; }
-  a:focus, a:hover {
-    color: #fff; }
-
 /* Custom default button */
-.btn-default {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff; }
-  .btn-default:hover, .btn-default:focus {
-    color: #333;
-    text-shadow: none;
-    /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: 1px solid #fff; }
-
 /*
  * Base structure
  */
@@ -78,14 +60,7 @@ body {
     padding-right: 0;
     padding-left: 0;
     font-size: 16px;
-    color: #fff;
-    /* IE8 proofing */
-    color: rgba(255, 255, 255, 0.75);
     border-bottom: 2px solid transparent; }
-    .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
-      border-bottom-color: #a9a9a9;
-      border-bottom-color: rgba(255, 255, 255, 0.25);
-      font-family: 'Julius Sans One', sans-serif; }
 
 @media (min-width: 768px) {
   .masthead-brand {
@@ -111,7 +86,7 @@ body {
   border-radius: 100%;
   border: 5px solid black;
   background-color: antiquewhite;
-  box-shadow: 0px 0px 0px 11px black inset; }
+  box-shadow: 11px 2px 43px -1px black; }
 
 /*
  * Footer
@@ -151,7 +126,8 @@ video {
 #r6Video {
   z-index: 2;
   border-top: 1px solid goldenrod;
-  border-bottom: 1px solid goldenrod; }
+  border-bottom: 1px solid goldenrod;
+  box-shadow: 0px 9px 24px black; }
 
 .communityInfoWrap, .modInfoWrap {
   width: 97vw;
@@ -194,7 +170,7 @@ section {
   border-radius: 100%;
   padding: 25px;
   background: -webkit-radial-gradient(circle farthest-corner, #a0abca, #617ed1);
-  box-shadow: 7px 5px 9px black; }
+  box-shadow: 1px 3px 45px 8px black inset; }
 
 .discWrapper {
   top: 30% !important; }
@@ -214,7 +190,8 @@ section {
   z-index: 2;
   width: 40vw;
   height: 40vw;
-  border: 2px solid black; }
+  border: 2px solid black;
+  box-shadow: 3px 8px 17px black; }
 
 .modText {
   width: 40vw;
@@ -233,14 +210,20 @@ section {
   width: 42vw !important; }
 
 .modWrapper {
-  position: static !important; }
+  position: static !important;
+  padding-bottom: 6vh;
+  padding-top: 0; }
 
 .modInfo {
   background-color: #282828 !important;
   width: 40vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s ease-in; }
+  .modInfo:hover {
+    opacity: 1; }
 
 p {
   padding: 5%; }
@@ -286,8 +269,15 @@ p {
   clip: rect(auto auto auto auto);
   display: flex;
   justify-content: center; }
-  .nav ul, .mastfoot ul {
-    border-bottom: 1px solid rgba(197, 190, 50, 0.52); }
+  .nav li a, .mastfoot li a {
+    color: red;
+    transition: border-bottom 1s ease-in;
+    border: none; }
+    .nav li a:hover, .mastfoot li a:hover {
+      content: '';
+      color: green;
+      background: none;
+      border-bottom: 1px solid gold; }
 
 @keyframes anim {
   0% {

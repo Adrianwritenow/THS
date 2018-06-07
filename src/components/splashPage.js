@@ -108,58 +108,73 @@ class SplashPage extends Component {
                 <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                   <div className='modInfo'>
                     <p className='modText'>
-                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
-                      the community and trying to be a model leader. "
+                      "BAMF has been a part of the community since it's conception. Spearheading a lot of initiatives throughout
+                      the community, frequently hosting meetings for members and moderators alike, encouraging positive behavior
+                      and trying to be a model leader. "
                     </p>
                   </div>
                   <img src='png/bamf.png' className='modImg'/>
                 </div>
-                <p>GRANDMASTER BAMF</p>
+                <p><span>GRANDMASTER</span><br/>BAMF</p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn='flipInY'>
                 <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                   <div className='modInfo'>
                     <p className='modText'>
-                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
-                      the community and trying to be a model leader. "
+                      "A stalwart optimist and diplomat. This love of jolly cooperation, alongside his
+                      penchant for cosplay and immersive character monologues. Saint Axios continues to
+                       stand by his vows to serve every single one of The Sepulchre's members, from recruit
+                      to commander, all the while with a smile on his face."
                     </p>
                   </div>
                   <img src='png/axios.png' className='modImg'/>
                 </div>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn='flipInY'>
-                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
-                  <div className='modInfo'>
-                    <p className='modText'>
-                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
-                      the community and trying to be a model leader. "
-                    </p>
-                  </div>
-                  <img src='png/luukiejj.png' className='modImg'/>
-                </div>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn='flipInY'>
-                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
-                  <div className='modInfo'>
-                    <p className='modText'>
-                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
-                      the community and trying to be a model leader. "
-                    </p>
-                  </div>
-                  <img src='png/virr.png' className='modImg'/>
-                </div>
+                <p><span>GRANDMASTER</span><br/>AXIOS</p>
 
                 </ScrollAnimation>
                 <ScrollAnimation animateIn='flipInY'>
                 <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                   <div className='modInfo'>
                     <p className='modText'>
-                      "BAMF has been a part of the community since it's conception.Spearheading a lot of initiatives throughout
-                      the community and trying to be a model leader. "
+                      "Joined the community a few weeks after its creation and slowly worked his way
+                      up the ranks. Besides doing the work behind the scenes, he's also actively
+                      communicating with all the members. Is known for being to the point, honest and direct."
+                    </p>
+                  </div>
+                  <img src='png/luukiejj.png' className='modImg'/>
+                </div>
+                <p><span>GRANDMASTER</span><br/>LUUKIEJJ</p>
+
+                </ScrollAnimation>
+
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "Has been a part of the community since its creation, and currently does most
+                      of the work behind the scenes. Most of what he does is record data, works closely
+                      with the justice department of the community, and solves technical problems with any
+                       bots, channels, or roles."
+                    </p>
+                  </div>
+                  <img src='png/virr.png' className='modImg'/>
+                </div>
+                <p><span>GRANDMASTER</span><br/>VIRR</p>
+
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='flipInY'>
+                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                  <div className='modInfo'>
+                    <p className='modText'>
+                      "Westo joined THS with the idea of being a member of the Knights faction discord
+                       and enjoying the comradery of the faction server. His experience in eSports led
+                       to his quick promotions. Having been in the server for over a year now
+                    , he strives to get to know as much of the community as he can."
                     </p>
                   </div>
                   <img src='png/westo.png' className='modImg'/>
                 </div>
+                <p><span>GRANDMASTER</span><br/>WESTO</p>
 
                 </ScrollAnimation>
 

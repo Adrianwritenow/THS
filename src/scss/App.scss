@@ -22,29 +22,9 @@ span{
 }
 
 
-a {
-  color: #fff;
-  &:focus, &:hover {
-    color: #fff;
-  }
-}
 
 /* Custom default button */
 
-.btn-default {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-  &:hover, &:focus {
-    color: #333;
-    text-shadow: none;
-    /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
-  }
-}
 
 /*
  * Base structure
@@ -105,27 +85,12 @@ body {
       padding-right: 0;
       padding-left: 0;
       font-size: 16px;
-      color: #fff;
-      /* IE8 proofing */
-      color: rgba(255, 255, 255, 0.75);
+
       border-bottom: 2px solid transparent;
-      &:hover, &:focus {
-        border-bottom-color: #a9a9a9;
-        border-bottom-color: rgba(255, 255, 255, 0.25);
-        font-family: 'Julius Sans One', sans-serif;
 
-
-      }
     }
   }
-  // .active > a {
-  //   color: #fff;
-  //   border-bottom-color: #fff;
-  //   &:hover, &:focus {
-  //     color: #fff;
-  //     border-bottom-color: #fff;
-  //   }
-  // }
+
 }
 
 @media (min-width: 768px) {
@@ -159,7 +124,7 @@ body {
   border-radius: 100%;
   border: 5px solid black;
   background-color: antiquewhite;
-  box-shadow: 0px 0px 0px 11px black inset;
+  box-shadow: 11px 2px 43px -1px black;
 }
 
 
@@ -212,6 +177,7 @@ video{
   z-index: 2;
   border-top: 1px solid goldenrod;
   border-bottom: 1px solid goldenrod;
+  box-shadow:0px 9px 24px black;
 
 }
 
@@ -268,7 +234,7 @@ section{
     border-radius: 100%;
     padding: 25px;
     background: -webkit-radial-gradient(circle farthest-corner,#a0abca,#617ed1);
-    box-shadow: 7px 5px 9px black;
+    box-shadow: 1px 3px 45px 8px black inset;
 }
 
 .discWrapper{
@@ -301,6 +267,7 @@ z-index: 1;
   width: 40vw;
   height: 40vw;
   border: 2px solid black;
+  box-shadow: 3px 8px 17px black;
 }
 .modText{
   width: 40vw;
@@ -324,6 +291,8 @@ align-items: center;
 .modWrapper{
   @extend .wrapper;
   position: static !important;
+  padding-bottom: 6vh;
+  padding-top: 0;
 }
 
 .modInfo{
@@ -333,6 +302,13 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity .3s ease-in;
+
+  &:hover{
+    opacity: 1
+  }
+
 }
 
 p{
@@ -406,11 +382,28 @@ opacity: .2;
     display: flex;
     justify-content: center;
 
-    ul{
-      border-bottom: 1px solid rgba(197, 190, 50, 0.52);
+    li{
+      a{
+        color:red;
+
+        transition: border-bottom 1s ease-in;
+        border: none;
+
+
+
+        &:hover{
+          content:'';
+          color: green;
+          background: none;
+          border-bottom: 1px solid gold;
+
+        }
+      }
     }
 
 }
+
+
 
 
 
