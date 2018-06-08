@@ -76,7 +76,7 @@ console.log("COMPONENT MOUNTED:Communities");
                         of Battle in brutal, fast-paced melee combat.
                       </p>
                     </div>
-                    <video  muted loop='true' id="r6Video">
+                    <video  muted loop='true' id="r6Video" webkit-playsinline>
                       <source src="public/../comVidFH.mp4" type="video/mp4"/>
                       Your browser does not support HTML5 video.
                     </video>
@@ -89,7 +89,7 @@ console.log("COMPONENT MOUNTED:Communities");
                       <p>Choose from a variety of unique Counter-Terrorist Operators and master their abilities
                        as you lead your team through tense, thrilling, and destructive team-based combat.</p>
                     </div>
-                    <video  muted loop='true' id="r6Video">
+                    <video  muted loop='true' id="r6Video" webkit-playsinline>
                       <source src="public/../comVidR6.mp4" type="video/mp4"/>
                         Your browser does not support HTML5 video.
                     </video>
@@ -102,7 +102,7 @@ console.log("COMPONENT MOUNTED:Communities");
                         <p>Take on the role of a hunter venturing into a new continent where you track down and
                          slay ferocious beasts in heart-pounding battles.</p>
                       </div>
-                      <video  muted loop='true' id="r6Video">
+                      <video  muted loop='true' id="r6Video" webkit-playsinline>
                         <source src="public/../comVidMH.mp4" type="video/mp4"/>
                           Your browser does not support HTML5 video.
                       </video>
@@ -116,7 +116,7 @@ console.log("COMPONENT MOUNTED:Communities");
                       responsible for maintaining the Age of Fire, is dying out. As has happened many times
                       before, the coming of the Age of Dark produces the undead.</p>
                     </div>
-                    <video  muted loop='true' id="r6Video">
+                    <video  muted loop='true' id="r6Video" webkit-playsinline>
                       <source src="public/../comVidDS.mp4" type="video/mp4"/>
                         Your browser does not support HTML5 video.
                       </video>
