@@ -33,7 +33,9 @@ class BaseLayout extends Component {
                     </ul>
                   </nav>
                 {this.props.children}
-                <div className='mastfoot'>ADRIANWRITENOW.COM</div>
+                <div className='mastfoot'>
+                  <a href='https://www.adrianwritenow.com'><img src='png/bg-tigercrop.png' className='awnLogo'/></a>
+                </div>
               </div>
 
 

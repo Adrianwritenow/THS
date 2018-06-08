@@ -1,3 +1,10 @@
+.contentWrapper {
+  width: 98vw;
+  display: inline-block;
+  border-left: 1px solid gold;
+  border-right: 1px solid gold;
+  border-top: 1px solid gold; }
+
 .fade-enter {
   opacity: 0; }
 
@@ -81,6 +88,9 @@ body {
   color: palegoldenrod;
   margin-top: 5vh; }
 
+.disc {
+  padding-bottom: 6vh; }
+
 .thsLogo {
   width: 55%;
   border-radius: 100%;
@@ -96,20 +106,43 @@ body {
   width: 100%;
   bottom: 0; }
 
+.awnLogo {
+  width: 22px; }
+
 #loader {
   z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 0px;
-  height: 0px;
+  width: 110px;
+  height: 110px;
   border-radius: 100%;
-  opacity: .6;
-  border: 20px solid aqua;
-  animation: anim .35s infinite linear;
-  box-shadow: 0px 0px 50px 10px aqua; }
+  /* opacity: 1; */
+  background-color: transparent;
+  -webkit-animation: anim 1s linear infinite 1s;
+  animation: anim 1s infinite linear;
+  height: 100vh;
+  position: fixed; }
 
+@keyframes anim {
+  0% {
+    width: 0vmin;
+    height: 0vmin; }
+  10% {
+    opacity: 1; }
+  100% {
+    opacity: 0.0;
+    width: 100vmin;
+    height: 100vmin; }
+  0% {
+    box-shadow: 0 0 8px palegoldenrod, inset 0 0 28px palegoldenrod; }
+  50% {
+    box-shadow: 0 0 16px palegoldenrod, inset 0 0 34px palegoldenrod; }
+  100% {
+    box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod; } }
 video {
   width: 100%; }
 
@@ -166,14 +199,14 @@ section {
 
 .fab {
   font-size: 6em;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 100%;
   padding: 25px;
-  background: -webkit-radial-gradient(circle farthest-corner, #a0abca, #617ed1);
-  box-shadow: 1px 3px 45px 8px black inset; }
-
-.discWrapper {
-  top: 30% !important; }
+  background: -webkit-radial-gradient(circle farthest-corner, #c3c8d7, #4767c0);
+  box-shadow: 1px 3px 45px 3px black inset;
+  transition: box-shadow .05s ease-in; }
+  .fab:hover {
+    box-shadow: 29px 21px 49px -10px black inset; }
 
 .fa-handshake-o {
   padding-top: 60px;
@@ -196,7 +229,10 @@ section {
 .modText {
   width: 40vw;
   height: auto;
-  font-size: 8px; }
+  font-size: 60%; }
+
+.animated p {
+  font-weight: lighter; }
 
 .modContent {
   display: flex;
@@ -270,26 +306,22 @@ p {
   display: flex;
   justify-content: center; }
   .nav li a, .mastfoot li a {
-    color: red;
-    transition: border-bottom 1s ease-in;
-    border: none; }
-    .nav li a:hover, .mastfoot li a:hover {
-      content: '';
-      color: green;
-      background: none;
-      border-bottom: 1px solid gold; }
+    color: goldenrod;
+    display: inline-block;
+    margin: 0;
+    background-color: black !important; }
+  .nav li a::before, .mastfoot li a::before, .nav li a::after, .mastfoot li a::after {
+    content: '';
+    display: block;
+    width: auto;
+    position: relative;
+    background-color: #F86534;
+    height: 1px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out; }
+  .nav li a:hover::before, .mastfoot li a:hover::before, .nav li a:hover::after, .mastfoot li a:hover::after {
+    transform: scaleX(1); }
 
-@keyframes anim {
-  0% {
-    opacity: 0.0;
-    width: 0vmin;
-    height: 0vmin; }
-  10% {
-    opacity: 0.2; }
-  100% {
-    opacity: 0.0;
-    width: 100vmin;
-    height: 100vmin; } }
 /*
  * Affix and center
  */
@@ -309,6 +341,40 @@ p {
     font-family: 'Julius Sans One', sans-serif; }
 
   .thsLogo {
-    width: 200px; } }
+    width: 200px; }
+
+  .headerTop, .banner {
+    font-size: 8.5em; }
+
+  .modImg {
+    width: 25vw;
+    height: 25vw; }
+
+  .modInfo {
+    width: 25vw; }
+
+  .modInfoWrap {
+    width: 26vw !important; }
+
+  .modText {
+    width: 25vw;
+    font-size: 1em; }
+
+  p {
+    font-size: 2em; }
+
+  h1 {
+    font-size: 4em; }
+
+  .communityInfoWrap, .modInfoWrap {
+    width: 75vw; }
+
+  .fab {
+    font-size: 10em; }
+
+  .bannerTxt h1 {
+    font-size: 15.5em; }
+  .bannerTxt h4 {
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=App.css.map */

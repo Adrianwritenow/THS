@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './css/App.css';
 import BaseLayout from './components/baseLayout';
 import SplashPage from "./components/splashPage";
-import About from "./components/aboutPg";
 import Enlist from "./components/enlistPg";
 import Communities from "./components/communitiesPg";
 
@@ -17,12 +16,13 @@ class App extends Component {
     var y = document.getElementById("root");
 
     y.style.opacity='0';
-    setTimeout(function(){x.style.display='none'},2000);
+    y.style.height='0vh';
+    setTimeout(function(){x.style.display='none'},4000);
 
   }
   componentDidMount(){
     var y = document.getElementById("root");
-    setTimeout(function(){y.style.opacity=1, y.style.transition='opacity 250ms ease-in'},2000);
+    setTimeout(function(){y.style.opacity=1, y.style.transition='opacity 250ms ease-in'},4000);
 
 
 

@@ -111,11 +111,14 @@ class EnlistPg extends Component {
 
 
                 <div className="content">
-                <h1 className="cover-heading">WHAT ARE YOU WAITING FOR?</h1>
+                <ScrollAnimation animateIn='pulse'>
+                  <h1 className="cover-heading disc">WHAT ARE YOU WAITING FOR?</h1>
+                </ScrollAnimation>
 
+                <ScrollAnimation animateIn='bounceInDown'>
 
-                <a href='#'><i className="fab fa-discord"></i></a>
-              
+                  <a href=' https://discord.gg/6yr9g7c'><i className="fab fa-discord"></i></a>
+                </ScrollAnimation>
 
                 </div>
 
