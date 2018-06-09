@@ -7,6 +7,8 @@ $ths-orange:#F86534;
   border-left: 1px solid gold;
   border-right: 1px solid gold;
   border-top: 1px solid gold;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url('../bg-texture.jpeg');
+
 }
 
 .fade-enter{
@@ -247,8 +249,9 @@ opacity: .7;
 
 
 section{
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+
   // Reset stacking context
   // isolation: isolate;
   // Must be set to correctly position .wrapper below
@@ -259,11 +262,12 @@ section{
 
 }
 
-.bg{
- background-color: #282828;
-
-
-}
+// .bg{
+//  background-color: #282828;
+//
+//
+//
+// }
 .two>.wrapper{
       top: 1vh;
 }
@@ -515,6 +519,8 @@ opacity: .2;
   body{
     margin: 0;
     font-family: 'Julius Sans One', sans-serif;
+
+
 
   }
   .masthead, .mastfoot, .cover-container {
