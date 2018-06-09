@@ -146,6 +146,9 @@ body {
 video {
   width: 100%; }
 
+img {
+  width: 100%; }
+
 #myVideo {
   position: absolute;
   right: 0;
