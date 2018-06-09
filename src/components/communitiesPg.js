@@ -92,7 +92,7 @@ console.log("COMPONENT MOUNTED:Communities");
                        as you lead your team through tense, thrilling, and destructive team-based combat.</p>
                     </div>
                     <video  muted loop='true' id="r6Video" webkit-playsinline poster='public/../png/R6.jpg'>
-                      <source src="public/../comVidR6.mp4" type="video/mp4"/>
+                      <source src="public/../comVidR6s.mp4" type="video/mp4"/>
                         Your browser does not support HTML5 video.
                     </video>
                   </div>
@@ -105,7 +105,7 @@ console.log("COMPONENT MOUNTED:Communities");
                          slay ferocious beasts in heart-pounding battles.</p>
                       </div>
                       <video  muted loop='true' id="r6Video" webkit-playsinline>
-                        <source src="public/../comVidMH.mp4" type="video/mp4" poster='public/../png/mHw.jpg'/>
+                        <source src="public/../comVidMHs.mp4" type="video/mp4" poster='public/../png/mHw.png'/>
                           Your browser does not support HTML5 video.
                       </video>
                     </div>
@@ -120,6 +120,21 @@ console.log("COMPONENT MOUNTED:Communities");
                     </div>
                     <video  muted loop='true' id="r6Video" webkit-playsinline poster='public/../png/ds3Logo.jpg'>
                       <source src="public/../comVidDS.mp4" type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                      </video>
+                  </div>
+                </ScrollAnimation>
+
+                <ScrollAnimation animateIn='bounceInDown'>
+                  <div className='communityInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+                    <div className='communityInfo'>
+                      <p>"The pirate life. Not everything that sails the Sea of Thieves can be invited for
+                        a pint of grog in the local tavern. Wild animals and exotic creatures are waiting to
+                         be discovered, but the greater threat comes from the remains of previous pirates who
+                          haven't learned to take death lying down."</p>
+                    </div>
+                    <video  muted loop='true' id="r6Video" webkit-playsinline poster='public/../png/seaOfTcom.jpg'>
+                      <source src="public/../sOtComVid.mp4" type="video/mp4"/>
                         Your browser does not support HTML5 video.
                       </video>
                   </div>
