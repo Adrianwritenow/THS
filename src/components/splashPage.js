@@ -56,7 +56,7 @@ class SplashPage extends Component {
             </div>
 
             <div className="content contentOne">
-            <video autoPlay muted loop='true' id="myVideo"  poster='public/../png/fhStill.jpg' webkit-playsinline>
+            <video autoPlay muted loop='true' id="myVideo"  poster='public/../png/fhStill.jpg' webkit-playsinline playsinline>
                 <source src="public/../thsOpenVid.mp4" type="video/mp4"/>
                 Your browser does not support HTML5 video.
               </video>
