@@ -105,7 +105,7 @@ console.log("COMPONENT MOUNTED:Communities");
                          slay ferocious beasts in heart-pounding battles.</p>
                       </div>
                       <video playsInline muted loop='true' id="r6Video" webkit-playsInline>
-                        <source src="public/../comVidMH.mp4" type="video/mp4" poster='public/../png/mHw.png'/>
+                        <source src="public/../comVidMH.mp4" type="video/mp4" poster='public/../png/mHw.jpg'/>
                           Your browser does not support HTML5 video.
                       </video>
                     </div>
