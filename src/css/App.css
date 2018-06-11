@@ -4,6 +4,7 @@
   border-left: 1px solid gold;
   border-right: 1px solid gold;
   border-top: 1px solid gold;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url("../bg-texture.jpeg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url("../bg-texture.jpeg"); }
 
 .fade-enter {
@@ -11,6 +12,7 @@
 
 .fade-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in; }
 
 .fade-exit {
@@ -18,6 +20,7 @@
 
 .fade-exit-active {
   opacity: 1;
+  -webkit-transition: opacity 450ms ease-in;
   transition: opacity 450ms ease-in; }
 
 span {
@@ -97,12 +100,15 @@ body {
   border-radius: 100%;
   border: 5px solid black;
   background-color: antiquewhite;
+  -webkit-box-shadow: 11px 2px 43px -1px black;
   box-shadow: 11px 2px 43px -1px black; }
 
 /*
  * Footer
  */
 .mastfoot {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   width: 100%;
   bottom: 0; }
@@ -116,7 +122,6 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 110px;
   height: 110px;
@@ -128,6 +133,25 @@ body {
   height: 100vh;
   position: fixed; }
 
+@-webkit-keyframes anim {
+  0% {
+    width: 0vmin;
+    height: 0vmin; }
+  10% {
+    opacity: 1; }
+  100% {
+    opacity: 0.0;
+    width: 100vmin;
+    height: 100vmin; }
+  0% {
+    -webkit-box-shadow: 0 0 8px palegoldenrod, inset 0 0 28px palegoldenrod;
+    box-shadow: 0 0 8px palegoldenrod, inset 0 0 28px palegoldenrod; }
+  50% {
+    -webkit-box-shadow: 0 0 16px palegoldenrod, inset 0 0 34px palegoldenrod;
+    box-shadow: 0 0 16px palegoldenrod, inset 0 0 34px palegoldenrod; }
+  100% {
+    -webkit-box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod;
+    box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod; } }
 @keyframes anim {
   0% {
     width: 0vmin;
@@ -139,10 +163,13 @@ body {
     width: 100vmin;
     height: 100vmin; }
   0% {
+    -webkit-box-shadow: 0 0 8px palegoldenrod, inset 0 0 28px palegoldenrod;
     box-shadow: 0 0 8px palegoldenrod, inset 0 0 28px palegoldenrod; }
   50% {
+    -webkit-box-shadow: 0 0 16px palegoldenrod, inset 0 0 34px palegoldenrod;
     box-shadow: 0 0 16px palegoldenrod, inset 0 0 34px palegoldenrod; }
   100% {
+    -webkit-box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod;
     box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod; } }
 video {
   width: 100%; }
@@ -156,6 +183,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
   z-index: -1; }
@@ -164,12 +192,19 @@ img {
   z-index: 2;
   border-top: 1px solid goldenrod;
   border-bottom: 1px solid goldenrod;
+  -webkit-box-shadow: 0px 9px 24px black;
   box-shadow: 0px 9px 24px black; }
 
 .communityInfoWrap, .modInfoWrap {
   width: 97vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 5%; }
 
@@ -204,9 +239,14 @@ section {
   border-radius: 100%;
   padding: 25px;
   background: -webkit-radial-gradient(circle farthest-corner, #c3c8d7, #4767c0);
+  -webkit-box-shadow: 1px 3px 45px 3px black inset;
   box-shadow: 1px 3px 45px 3px black inset;
-  transition: box-shadow .05s ease-in; }
+  -webkit-transition: -webkit-box-shadow .05s ease-in;
+  transition: -webkit-box-shadow .05s ease-in;
+  transition: box-shadow .05s ease-in;
+  transition: box-shadow .05s ease-in, -webkit-box-shadow .05s ease-in; }
   .fab:hover {
+    -webkit-box-shadow: 29px 21px 49px -10px black inset;
     box-shadow: 29px 21px 49px -10px black inset; }
 
 .fa-handshake-o {
@@ -225,6 +265,7 @@ section {
   width: 40vw;
   height: 40vw;
   border: 2px solid black;
+  -webkit-box-shadow: 3px 8px 17px black;
   box-shadow: 3px 8px 17px black; }
 
 .modText {
@@ -236,11 +277,18 @@ section {
   font-weight: lighter; }
 
 .modContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
   z-index: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .modInfoWrap {
@@ -254,10 +302,17 @@ section {
 .modInfo {
   background-color: #282828 !important;
   width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   opacity: 0;
+  -webkit-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in; }
   .modInfo:hover {
     opacity: 1; }
@@ -266,13 +321,23 @@ p {
   padding: 5%; }
 
 .contentOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   opacity: .2; }
 
 .wrapper, .discWrapper, .modWrapper, .whyWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   clip: rect(auto auto auto auto);
   position: absolute;
@@ -293,6 +358,7 @@ p {
   font-size: 7.6em; }
 
 .whyWrapper {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: static; }
 
@@ -304,7 +370,11 @@ p {
   background-color: black;
   width: 100%;
   clip: rect(auto auto auto auto);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   .nav li a, .mastfoot li a {
     color: goldenrod;
@@ -318,9 +388,14 @@ p {
     position: relative;
     background-color: #F86534;
     height: 1px;
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    transition: transform 250ms ease-in-out; }
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out; }
   .nav li a:hover::before, .mastfoot li a:hover::before, .nav li a:hover::after, .mastfoot li a:hover::after {
+    -webkit-transform: scaleX(1);
     transform: scaleX(1); }
 
 /*
