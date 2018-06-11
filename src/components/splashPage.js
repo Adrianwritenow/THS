@@ -81,7 +81,7 @@ class SplashPage extends Component {
               <ScrollAnimation animateIn='flipInY'>
                 <img className='thsLogo' src='png/THS.png' alt='THS_LOGO'/>
               </ScrollAnimation>
-                <p><span>The Holy Sepluchre</span> is a gaming community consisting of
+                <p><span>The Holy Sepulchre</span> is a gaming community consisting of
                   over 1,600 members  with communities in Rainbow 6 Siege,
                   Darksouls, Monster Hunter and is <span>the LARGEST For Honor
                   Knights community</span>.
