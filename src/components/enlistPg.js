@@ -34,7 +34,7 @@ class EnlistPg extends Component {
               <h1 className='banner'>ENLIST</h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn='zoomInUp'>
-              <h4>JOIN OUR RANKS</h4>
+              <h4>LEARN HOW TO JOIN OUR RANKS</h4>
             </ScrollAnimation>
 
             </div>
@@ -112,7 +112,7 @@ class EnlistPg extends Component {
 
                 <div className="content">
                 <ScrollAnimation animateIn='pulse'>
-                  <h1 className="cover-heading disc">WHAT ARE YOU WAITING FOR?</h1>
+                  <h1 className="cover-heading disc">JOIN US ON DISCORD</h1>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn='bounceInDown'>
