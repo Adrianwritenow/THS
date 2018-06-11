@@ -9,7 +9,6 @@ function lowerZIndex(event){
   let gameInfo = event.currentTarget.firstChild;
   let gameVid = gameInfo.nextElementSibling;
   gameVid.currentTime=0;
-  gameVid.play();
   gameVid.style.zIndex='0';
   console.log('im entering');
 }
@@ -20,7 +19,6 @@ function raiseZIndex(event){
   let gameVid =gameInfo.nextElementSibling;
   gameVid.currentTime=0;
   gameVid.style.zIndex='1';
-  gameVid.pause();
 
   console.log('im leavin');
 }
@@ -76,11 +74,7 @@ console.log("COMPONENT MOUNTED:Communities");
                         of Battle in brutal, fast-paced melee combat.
                       </p>
                     </div>
-                    <video preload='none' playsInline muted loop='true' id="r6Video" webkit-playsInline poster='public/../png/fhBg.jpg'>
-                      <source src="public/../comVidFH.mp4" type="video/mp4"/>
-
-                      Your browser does not support HTML5 video.
-                    </video>
+                      <img src="public/../png/fhBg.jpg" id="r6Video"/>
                   </div>
 
                 </ScrollAnimation>
@@ -91,10 +85,7 @@ console.log("COMPONENT MOUNTED:Communities");
                       <p>Choose from a variety of unique Counter-Terrorist Operators and master their abilities
                        as you lead your team through tense, thrilling, and destructive team-based combat.</p>
                     </div>
-                    <video preload='none' playsInline muted loop='true' id="r6Video" webkit-playsInline poster='public/../png/R6.jpg'>
-                      <source src="public/../comVidR6.mp4" type="video/mp4"/>
-                        Your browser does not support HTML5 video.
-                    </video>
+                      <img src="public/../png/R6.jpg" id="r6Video"/>
                   </div>
                 </ScrollAnimation>
 
@@ -104,10 +95,7 @@ console.log("COMPONENT MOUNTED:Communities");
                         <p>Take on the role of a hunter venturing into a new continent where you track down and
                          slay ferocious beasts in heart-pounding battles.</p>
                       </div>
-                      <video preload='none' playsInline muted loop='true' id="r6Video" webkit-playsInline>
-                        <source src="public/../comVidMH.mp4" type="video/mp4" poster='public/../png/mHw.jpg'/>
-                          Your browser does not support HTML5 video.
-                      </video>
+                        <img src="public/../png/mHw.jpg" id="r6Video"/>
                     </div>
                   </ScrollAnimation>
 
@@ -118,10 +106,7 @@ console.log("COMPONENT MOUNTED:Communities");
                       responsible for maintaining the Age of Fire, is dying out. As has happened many times
                       before, the coming of the Age of Dark produces the undead.</p>
                     </div>
-                    <video preload='none' playsInline muted loop='true' id="r6Video" webkit-playsInline poster='public/../png/ds3Logo.jpg'>
-                      <source src="public/../comVidDS.mp4" type="video/mp4"/>
-                        Your browser does not support HTML5 video.
-                      </video>
+                      <img src="public/../png/ds3Logo.jpg" id="r6Video"/>
                   </div>
                 </ScrollAnimation>
 
@@ -133,10 +118,7 @@ console.log("COMPONENT MOUNTED:Communities");
                          be discovered, but the greater threat comes from the remains of previous pirates who
                           haven't learned to take death lying down."</p>
                     </div>
-                    <video preload='none' playsInline muted loop='true' id="r6Video" webkit-playsInline poster='public/../png/seaOfTcom.jpg'>
-                      <source src="public/../sOtComVid.mp4" type="video/mp4"/>
-                        Your browser does not support HTML5 video.
-                      </video>
+                      <img src="public/../png/seaOfTcom.jpg" id="r6Video"/>
                   </div>
                 </ScrollAnimation>
                 </div>

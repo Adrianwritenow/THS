@@ -171,9 +171,6 @@ body {
   100% {
     -webkit-box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod;
     box-shadow: 0 0 8px palegoldenrod, inset 0 0 8px palegoldenrod; } }
-video {
-  width: 100%; }
-
 img {
   width: 100%; }
 
