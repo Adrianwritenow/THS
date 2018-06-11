@@ -123,7 +123,7 @@ class SplashPage extends Component {
                 <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
                   <div className='modInfo'>
                     <p className='modText'>
-                      "A stalwart optimist and diplomat. This love of jolly cooperation, alongside his
+                      "A stalwart optimist and diplomat. With love of jolly cooperation, alongside his
                       penchant for cosplay and immersive character monologues. Saint Axios continues to
                        stand by his vows to serve every single one of The Sepulchre's members, from recruit
                       to commander, all the while with a smile on his face."
