@@ -301,7 +301,6 @@ section {
 
 .modInfo {
   background-color: #282828 !important;
-  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,7 +426,8 @@ p {
     height: 25vw; }
 
   .modInfo {
-    width: 25vw; }
+    width: 25vw;
+    height: 25vw; }
 
   .modInfoWrap {
     width: 26vw !important; }

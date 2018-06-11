@@ -412,7 +412,6 @@ z-index: 1;
 .modInfo{
   @extend .communityInfo;
   background-color: #282828 !important;
-  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,6 +614,7 @@ opacity: .2;
 }
 .modInfo{
   width:25vw;
+  height: 25vw;
 
 }
 .modInfoWrap{

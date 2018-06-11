@@ -6,7 +6,7 @@ import '../css/App.css';
 function lowerZIndex(event){
   event.preventDefault();
   let gameInfo = event.currentTarget.firstChild;
-  let gameVid =gameInfo.nextElementSibling;
+  let gameVid =gameInfo.nextElementSibling
   gameVid.style.zIndex='0';
   console.log('im entering');
 }
@@ -16,6 +16,8 @@ function raiseZIndex(event){
   let gameInfo = event.currentTarget.firstChild;
   let gameVid =gameInfo.nextElementSibling;
   gameVid.style.zIndex='1';
+
+  // gameVid.style.zIndex='1';
 
   console.log('im leavin');
 }
@@ -164,7 +166,9 @@ class SplashPage extends Component {
                 </ScrollAnimation>
                 <ScrollAnimation animateIn='flipInY'>
                 <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
+
                   <div className='modInfo'>
+
                     <p className='modText'>
                       "Westo joined THS with the idea of being a member of the Knights faction discord
                        and enjoying the comradery of the faction server. His experience in eSports led
@@ -173,6 +177,7 @@ class SplashPage extends Component {
                     </p>
                   </div>
                   <img src='png/westo.png' className='modImg'/>
+
                 </div>
                 <p><span>GRANDMASTER</span><br/>WESTO</p>
 
