@@ -314,7 +314,7 @@ section {
   -webkit-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in; }
   .modInfo:hover {
-    opacity: 1; }
+    opacity: 0.94; }
 
 p {
   padding: 5%; }
