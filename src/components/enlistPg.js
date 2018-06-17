@@ -72,7 +72,7 @@ class EnlistPg extends Component {
               </ScrollAnimation>
 
                 <p>We have over 1,600 members and span several games, constantly adding
-                  new ones. Join one of our many chatrooms spanning from game game discussion
+                  new ones. Join one of our many chatrooms spanning from game discussion
                   to memes.
                 </p>
               </div>

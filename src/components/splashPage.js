@@ -83,7 +83,7 @@ class SplashPage extends Component {
               </ScrollAnimation>
                 <p><span>The Holy Sepulchre</span> is a gaming community consisting of
                   over 1,600 members  with communities in Rainbow 6 Siege,
-                  Darksouls, Monster Hunter and is <span>the LARGEST For Honor
+                  Darksouls, Monster Hunter, Sea of Thieves and is <span>the LARGEST For Honor
                   Knights community</span>.
                 </p>
               </div>
@@ -98,7 +98,7 @@ class SplashPage extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeInUp'>
-              <p>We have A very large community, here are the <span>THS</span> Moderators </p>
+              <p>We have A very large community, and great leadership, here are the <span>THS</span> Moderators</p>
             </ScrollAnimation>
               <div className="modWrapper">
 
