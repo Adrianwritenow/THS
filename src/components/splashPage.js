@@ -164,24 +164,7 @@ class SplashPage extends Component {
                 <p><span>GRANDMASTER</span><br/>VIRR</p>
 
                 </ScrollAnimation>
-                <ScrollAnimation animateIn='flipInY'>
-                <div className='modInfoWrap' onMouseEnter={lowerZIndex} onMouseLeave={raiseZIndex}>
-
-                  <div className='modInfo'>
-
-                    <p className='modText'>
-                      "Westo joined THS with the idea of being a member of the Knights faction discord
-                       and enjoying the comradery of the faction server. His experience in eSports led
-                       to his quick promotions. Having been in the server for over a year now
-                    , he strives to get to know as much of the community as he can."
-                    </p>
-                  </div>
-                  <img src='png/westo.png' className='modImg'/>
-
-                </div>
-                <p><span>GRANDMASTER</span><br/>WESTO</p>
-
-                </ScrollAnimation>
+              
 
                 </div>
 
