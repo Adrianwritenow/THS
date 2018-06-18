@@ -34,7 +34,7 @@ class EnlistPg extends Component {
               <h1 className='banner'>ENLIST</h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn='zoomInUp'>
-              <h4>LEARN HOW TO JOIN OUR RANKS</h4>
+              <h4>HOW TO JOIN OUR RANKS</h4>
             </ScrollAnimation>
 
             </div>
@@ -59,9 +59,9 @@ class EnlistPg extends Component {
               </ScrollAnimation>
 
 
-                <p><span>The Holy Sepluchre</span> is a constantly growing community, we are both
-                 welcoming and excited for new members. We want you to learn and grow
-                 with our members and we also hope to learn something from you as well.
+                <p><span>The Holy Sepluchre</span> is a constantly growing community, which is both
+                 welcoming and exciting for new members. We want you to grow and learn
+                 from our members and we hope to learn something from you as well.
                 </p>
               </div>
 
@@ -84,7 +84,8 @@ class EnlistPg extends Component {
               </ScrollAnimation>
 
                 <p>We regularly hold community events going beyond just solo and team battles.
-                  With a community as large as ours expect a variety of competition.
+                  With a community as large as ours expect a variety of competition and tournaments
+                  for both competitive and casual players.
                 </p>
               </div>
 
